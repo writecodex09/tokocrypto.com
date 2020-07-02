@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Test No 2</title>
+</head>
+<body>
+    <h1>Soal Test No 2 (Mengubah posisi elemen Array berdasarkan inputan User)</h1>
+    <p>Posisi default elemen Array</p><p>[9,10,11,12,13,14,15]</p>
+    <p>Contoh: Variable inputan adalah N.</p> 
+    <p>Jika N = 5 maka hasil array adalah [11,12,13,14,15,9,10].</p> 
+    <p>Jika N = 2 maka hasil array adalah: [14,15,9,10,11,12,13]</p> 
+    <input type="text" placeholder="Masukan angka" id="myInput">
+    <button type="button" onclick="getInputValue();">Hasil</button>
+    
+    <script>
+        function getInputValue(){
+            var angka = new Array(9,10,11,12,13,14,15)
+            j = angka.length;
+            var inputVal = document.getElementById("myInput").value;
+            if(isdigit(inputVal)){
+                for(i = inputVal ;i > 0 ; i--){
+                t = angka.pop();
+                angka.unshift(t);
+            }
+            for(i = 0 ;i<angka.length;i++){
+                document.write(angka[i]);
+            }
+            }else{
+                alert('Inputan yang diberikan haruslah berupa angka');
+            }
+            
+        }
+            function isalpha(c) {
+            return (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')));
+                }
+
+            function isdigit(c) {
+                return ((c >= '0') && (c <= '9'));
+            }
+
+            function isalnum(c) {
+                return (isalpha(c) || isdigit(c));
+            }
+    </script>
+</body>
+</html>
