@@ -3,7 +3,7 @@ Repo ini berisikan test untuk posisi backend developer di tokocrypto.com
 
 Dokumentasi dan Penggunaan
 
-Soal ke-1 
+# Soal ke-1 
 
 Buat sebuah fungsi untuk menjumlahkan bilangan fibonacci prima
 dengan parameter maximum fibonacci number, contoh input :
@@ -17,7 +17,7 @@ Cara Menjalankan :
 2. Double Click pada file soal1.html
 
 
-Soal ke-2
+# Soal ke-2
 
 Pada bagian ini diberikan sebuah array yaitu [9,10,11,12,13,14,15]
 User akan memasukan inputan berupa angka (misal 1, 2 dan sebagainya)dimana angka yang dimasukan oleh user akan menentukan urutan dari elemen Array Tersebut
@@ -31,7 +31,7 @@ Cara menjalankan :
 3. Silahkan masukan inputan berupa angka 
 4. Klik Tombol Hasil
 
-Soal ke-3
+# Soal ke-3
 
 Pada bagian ini diberikan challenge untuk membuat sebuah API sederhana menggunakan NodeJS untuk merepresentasikan proses penjualan barang. 
 Pada soal ini saya menggunakan NodeJS dan framework Express, serta menggunakan MongoDB untuk database 
@@ -40,11 +40,16 @@ Berikut End Point
 /api/transaksi :GET :POST
 /api/transaksi/:nama :GET :PUT :DELETE
 
-Test API (POSTMAN)
+# Test API (POSTMAN)
+
 silahkan ketikan url /api/transaksi untuk mendaptkan semua record pesanan (Gunakan method GET)
+
 silahkan ketikan url /api/transaksi untuk melakukan pesanan (Gunakan method POST), silahkan masukan key nama, kode, ukuran, warna, alamat_pengiriman, jumlah
+
 silahkan ketikan url /api/transaksi/:nama untuk mendaptkan record pesanan tertentu (Gunakan method GET)
+
 silahkan ketikan url /api/transaksi/:nama untuk mengupdate pesanan tertentu (Gunakan method PUT)
+
 silahkan ketikan url /api/transaksi/:nama untuk menghapus pesanan tertentu (Gunakan method DELETE)
 
 Cara menjalankan : 
