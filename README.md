@@ -5,6 +5,16 @@ Dokumentasi dan Penggunaan
 
 Soal ke-1 
 
+Buat sebuah fungsi untuk menjumlahkan bilangan fibonacci prima
+dengan parameter maximum fibonacci number, contoh input :
+INPUT :
+sumFibonanciPrime(20);
+OUTPUT:
+25
+
+Cara Menjalankan :
+1. Silahkan buka folder Test No 1
+2. Double Click pada file soal1.html
 
 
 Soal ke-2
