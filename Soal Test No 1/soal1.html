@@ -1,0 +1,33 @@
+<script>
+    function fib(n){
+    f1 = 0;f2 = 1;temp = 0;i=1;bil1=1;tamp = 0
+    while(i==i){
+        if(temp <= n){
+            if(i==1){
+                tamp+=bil1;
+            }
+            if(i == 2){
+                tamp+=f2;
+            }
+            temp = f1+f2;
+            f1=f2;
+            f2=temp;
+            if(isPrime(temp)){
+                tamp+=temp
+            }
+        }
+        else{
+            return tamp;
+            break;
+        }
+        i++;
+    }
+}
+document.write(fib(20));
+function isPrime(num) {
+for(var i = 2; i < num; i++)
+        if(num % i === 0) return false;
+    return num > 1;
+}
+</script>
+
