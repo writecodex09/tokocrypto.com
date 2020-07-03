@@ -35,3 +35,18 @@ Soal ke-3
 
 Pada bagian ini diberikan challenge untuk membuat sebuah API sederhana menggunakan NodeJS untuk merepresentasikan proses penjualan barang. 
 Pada soal ini saya menggunakan NodeJS dan framework Express, serta menggunakan MongoDB untuk database 
+
+Berikut End Point 
+/api/transaksi :GET :POST
+/api/transaksi/:nama :GET :PUT :DELETE
+
+Test API (POSTMAN)
+silahkan ketikan url /api/transaksi untuk mendaptkan semua record pesanan (Gunakan method GET)
+silahkan ketikan url /api/transaksi untuk melakukan pesanan (Gunakan method POST), silahkan masukan key nama, kode, ukuran, warna, alamat_pengiriman, jumlah
+silahkan ketikan url /api/transaksi/:nama untuk mendaptkan record pesanan tertentu (Gunakan method GET)
+silahkan ketikan url /api/transaksi/:nama untuk mengupdate pesanan tertentu (Gunakan method PUT)
+silahkan ketikan url /api/transaksi/:nama untuk menghapus pesanan tertentu (Gunakan method DELETE)
+
+Cara menjalankan : 
+1. Buka cmd pada direktori folder Soal Test No 3
+2. Ketikan perintah node server.js
